@@ -9,3 +9,19 @@ git checkout nome_da_branch_criada
 
 # Verificar qual branch é a atual
 git branch
+
+#Criar a branch remoto - neste projeto criei a branch transform
+git push --set-upstream origin nome_da_branch
+
+# listas branches remotas
+git branch -r
+
+# listar a branch local
+git branch -l
+
+# Verificar logs
+git log
+
+# Depois de pegar o código no git log podemos voltar ao estado desse commit
+git reset --hard <código_do_commit>
+
