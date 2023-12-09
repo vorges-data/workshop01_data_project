@@ -1,0 +1,11 @@
+# Enviar os arquivos do servidor local para o remoto
+git push origin extract:master
+
+# Criar uma nova branch
+git branch nome_da_branch
+
+# Alterar a branch
+git checkout nome_da_branch_criada
+
+# Verificar qual branch é a atual
+git branch
