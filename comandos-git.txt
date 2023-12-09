@@ -1,0 +1,41 @@
+# Enviar os arquivos do servidor local para o remoto
+git push origin extract:master
+
+# Push para o servidor remotogit push origin <servidor_local>:<servidor_remoto>
+
+# Criar uma nova branch
+git branch nome_da_branch
+
+# Alterar a branch
+git checkout nome_da_branch_criada
+
+# Verificar qual branch é a atual
+git branch
+
+#Criar a branch remoto - neste projeto criei a branch transform
+git push --set-upstream origin nome_da_branch
+
+# listas branches remotas
+git branch -r
+
+# listar a branch local
+git branch -l
+
+# Verificar logs
+git log
+
+# Depois de pegar o código no git log podemos voltar ao estado desse commit
+git reset --hard <código_do_commit>
+
+#===============================================================================
+
+# Consolidar todas as alterações e arquivos de diferentes branches em uma única branch, como a 'master'
+1. Vá para a branch onde deseja ter todas as alterações (por exemplo, a master):
+    git checkout master
+
+2. Faça o merge de outras branches na master:
+    git merge <nome-da-outra-branch>
+
+Isso vai trazer todas as alterações da branch especificada para a master.
+
+#===============================================================================
