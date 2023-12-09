@@ -1,6 +1,8 @@
 # Enviar os arquivos do servidor local para o remoto
 git push origin extract:master
 
+# Push para o servidor remotogit push origin <servidor_local>:<servidor_remoto>
+
 # Criar uma nova branch
 git branch nome_da_branch
 
