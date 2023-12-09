@@ -27,3 +27,15 @@ git log
 # Depois de pegar o código no git log podemos voltar ao estado desse commit
 git reset --hard <código_do_commit>
 
+#===============================================================================
+
+# Consolidar todas as alterações e arquivos de diferentes branches em uma única branch, como a 'master'
+1. Vá para a branch onde deseja ter todas as alterações (por exemplo, a master):
+    git checkout master
+
+2. Faça o merge de outras branches na master:
+    git merge <nome-da-outra-branch>
+
+Isso vai trazer todas as alterações da branch especificada para a master.
+
+#===============================================================================
