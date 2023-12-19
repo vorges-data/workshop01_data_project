@@ -1,10 +1,12 @@
-import pandas as pd
 from typing import List
+
+import pandas as pd
 
 """"
 Função para transformar uma lista de dataframes em um único dataframe
 
 """
+
 
 def concat_to_dataframe(dataframes: List[pd.DataFrame]) -> pd.DataFrame:
     # concatena os dataframes da lista
@@ -12,5 +14,3 @@ def concat_to_dataframe(dataframes: List[pd.DataFrame]) -> pd.DataFrame:
 
     # retorna o dataframe
     return df
-
-

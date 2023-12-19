@@ -1,8 +1,8 @@
-import os # biblioteca para manipular arquivos e pastas
-import glob # biblioteca para listar arquivos de uma pasta
-import pandas as pd # biblioteca para manipular dataframes
+import glob  # biblioteca para listar arquivos de uma pasta
+import os  # biblioteca para manipular arquivos e pastas
+from typing import List  # biblioteca para definir tipos de variáveis
 
-from typing import List # biblioteca para definir tipos de variáveis    
+import pandas as pd  # biblioteca para manipular dataframes
 
 """
     Função para ler os arquivos de uma pasta data/input
@@ -16,7 +16,7 @@ from typing import List # biblioteca para definir tipos de variáveis
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
     # lista com os arquivos da pasta
-    all_files = glob.glob(os.path.join(path, "*.xlsx"))
+    all_files = glob.glob(os.path.join(path, '*.xlsx'))
 
     # lista com os dataframes de cada arquivo
     dataframes = []
@@ -29,7 +29,8 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     # retorna a lista de dataframes
     return dataframes
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     # chama a função para ler os arquivos
-    dataframes = extract_from_excel(path="data/input")
+    dataframes = extract_from_excel(path='data/input')
     print(dataframes)
