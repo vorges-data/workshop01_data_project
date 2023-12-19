@@ -14,11 +14,16 @@ pytest = "^7.4.3"
 requests = "^2.31.0"
 isort = "^5.13.2"
 blue = "^0.9.1"
-pydocstyle = "^6.3.0"
-pip-audit = "^2.6.1"
-taskipy = "^1.12.2"
-
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+known_first_party = "workshop01_data_project"
+
+[tool.taskipy.tasks]
+format = "isort . && blue ."
+test = "poetry run pytest -v"
+run = "python3 app/main.py"
