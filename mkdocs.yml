@@ -1,22 +1,19 @@
-site_name: ETL com Python
-theme: 
-  name: readthedocs
+site_name: Projeto ETL com Python
+theme:
+  name: material
   palette:
-    primary: blue
-    accent: blue
-    toggle:
-      icon: menu
-      name: Menu
-    language: pt
+    primary: black
+  language: pt
 
 repo_name: 'vorges-data/workshop01_data_project'
 repo_url: 'https://github.com/vorges-data/workshop01_data_project'
 
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
-        - name: code-block-caption
-          class: caption
+        - name: mermaid
+          class: mermaid
 
 plugins:
   - search
