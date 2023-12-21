@@ -21,3 +21,6 @@ flowchart LR
 
 # Função de Tranformação de Dados
 ### ::: app.pipeline.transform.concat_to_dataframe
+
+# Função de Carga de Dados
+### ::: app.pipeline.load.load_excel
