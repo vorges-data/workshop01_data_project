@@ -3,10 +3,7 @@ import os
 import pandas as pd
 
 
-def load_excel(
-    data_frame: pd.DataFrame, output_path: str, file_name: str
-) -> str:
-
+def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
     """
     ecebe um dataframe e salva em arquivo excel
 
@@ -23,7 +20,7 @@ def load_excel(
         os.makedirs(output_path)
 
     # salva o arquivo excel
-    data_frame.to_excel(f'{output_path}/{file_name}.xlsx', index=False)
+    data_frame.to_excel(f"{output_path}/{file_name}.xlsx", index=False)
 
     # retorna a mensagem de sucesso
-    return 'Arquivo salvo com sucesso!'
+    return "Arquivo salvo com sucesso!"

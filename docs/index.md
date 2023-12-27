@@ -1,6 +1,7 @@
-# Welcome to MkDocs
+# Bem-vindo(a) ao Projeto de ETL
+Este projeto foi desenvolvido com práticas de estruturação de projetos, documentações, testes e códigos de maneira modularizada, o objetivo final é construir uma ETL com python na qual consolida 50 arquivos em Excel em um único arquivo.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Para conhecer mais sobre meu trabalho, visite [vorges-data](https://www.vorges.com.br).
 
 ## Workflow
 
@@ -8,10 +9,10 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 flowchart LR
     subgraph ETL[Pipeline]
         A[Múltiplos Arquivos: Arquivos Excel] --> B[Extração: extract_from_excel]
-        B[Extração: extract_from_excel] --> |Gera uma lista de Dataframes| C[Transformação: consolidate_dataframes] 
+        B[Extração: extract_from_excel] --> |Gera uma lista de Dataframes| C[Transformação: consolidate_dataframes]
         C[Transformação: consolidate_dataframes] --> |Gera um Dataframe Consolidado| D[Carga: Converte para Excel]
         D[Carga: Converte para Excel] --> |Salva o consolidado em Excel| E[Pasta Output: Um arquivo único Excel]
-       
+
     end
 ```
 

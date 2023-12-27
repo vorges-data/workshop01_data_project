@@ -38,7 +38,7 @@ git reset --hard <código_do_commit>
 
 Isso vai trazer todas as alterações da branch especificada para a master.
 
-3.Depois de concluir o merge e resolver quaisquer conflitos, se houver, você deve fazer o 
+3.Depois de concluir o merge e resolver quaisquer conflitos, se houver, você deve fazer o
 push das alterações para atualizar o repositório remoto no GitHub. Isso pode ser feito usando:
     git push origin master
 

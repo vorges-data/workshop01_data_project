@@ -1,4 +1,4 @@
-"""Esse é o modelo de extração dos dados, que é a primeira etapa do pipeline."""
+"""Módulo de extração dos dados, que é a primeira etapa do pipeline."""
 
 import glob  # biblioteca para listar arquivos de uma pasta
 import os  # biblioteca para manipular arquivos e pastas
@@ -8,18 +8,17 @@ import pandas as pd  # biblioteca para manipular dataframes
 
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
-
     """
-        Função para ler os arquivos de uma pasta data/input
-        e retornar um dataframe com os dados
+    Função para ler os arquivos de uma pasta data/input
+    e retornar um dataframe com os dados
 
-        args:
-            input_path (str): caminho da pasta com os arquivos de entrada
-            return list: dataframe com os dados dos arquivos
+    args:
+        input_path (str): caminho da pasta com os arquivos de entrada
+        return list: dataframe com os dados dos arquivos
     """
 
     # lista com os arquivos da pasta
-    all_files = glob.glob(os.path.join(path, '*.xlsx'))
+    all_files = glob.glob(os.path.join(path, "*.xlsx"))
 
     # lista com os dataframes de cada arquivo
     dataframes = []
@@ -33,7 +32,7 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     return dataframes
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # chama a função para ler os arquivos
-    dataframes = extract_from_excel(path='data/input')
+    dataframes = extract_from_excel(path="data/input")
     print(dataframes)
