@@ -24,6 +24,8 @@ tomli = "^2.0.1"
 pip-audit = "^2.6.2"
 black = "^23.12.1"
 typing-extensions = "^4.9.0"
+exceptiongroup = "^1.2.0"
+numpy = "^1.26.2"
 
 [build-system]
 requires = ["poetry-core"]
