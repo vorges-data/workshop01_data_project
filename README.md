@@ -53,7 +53,7 @@ task run
 7. Ao executar a pipeline, verifique na pasta data/output se o arquivo foi gerado.
 
 ## Documentação Adicional
-A documentação detalhada do projeto pode ser encontrada na pasta **docs** ou acessada [Aqui](https://github.com/vorges-data/workshop01_data_project), onde são descritos detalhes sobre a estrutura do projeto, sua utilização e outras informações relevantes.
+A documentação detalhada do projeto pode ser encontrada na pasta **docs** ou acessada [Aqui](https://vorges-data.github.io/workshop01_data_project/), onde são descritos detalhes sobre a estrutura do projeto, sua utilização e outras informações relevantes.
 
 ## Contato
 * **Vinicius Borges** - [vinicius.jborges36@gmail.com](mailto:vinicius.jborges36@gmail.com)
